@@ -1,0 +1,70 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.highlight {
+    color: #ff0266; /* Change this to any color you want */
+}
+
+.navbar {
+    background: linear-gradient(45deg, #6200ea, #bb86fc);
+}
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after {
+    left: 0;
+    width: 100%;
+}
+.project-card {
+    background: #1e1e1e;
+    border-left: 5px solid #ff0266;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    border-left: 5px solid #03dac6;
+    box-shadow: 0 0 20px #03dac6;
+}
+.project-card h3, .project-card p {
+    color: #ffffff;
+    opacity: 1;
+}
+footer {
+    background: #3700b3;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    color: #ff0266;
+    text-decoration: none;
+}
+a:hover{
+    color: #03dac6;
+    text-decoration: none;
+}
+
+a svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover svg {
+    transform: scale(1.2);
+}
